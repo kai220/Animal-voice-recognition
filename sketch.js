@@ -16,7 +16,7 @@ let classifier;
 let label = "listening";
 
 // Teachable Machine model URL:
-let soundModelURL = 'https://kai220.github.io/animal-voice-recognition/model.json';
+let soundModelURL = 'https://kai220.github.io/Animal-voice-recognition/model.json';
 
 
 function preload() {
@@ -28,7 +28,6 @@ function setup() {
   createCanvas(320, 240);
   // Start classifying
   // The sound model will continuously listen to the microphone
-  ThunkableWebviewerExtension.postMessage("ready");
   classifier.classify(gotResult);
 }
 
