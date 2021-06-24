@@ -16,7 +16,7 @@ let classifier;
 let label = "listening";
 
 // Teachable Machine model URL:
-let soundModelURL = 'https://kai220.github.io/Animal-voice-recognition/model.json';
+let soundModelURL = 'https://kai220.github.io/Animal-voice-recognition/model.json';//連結更改
 
 
 function preload() {
@@ -51,5 +51,5 @@ function gotResult(error, results) {
   // The results are in an array ordered by confidence.
   // console.log(results[0]);
   label = results[0].label;
-  ThunkableWebviewerExtension.postMessage(label);
+  ThunkableWebviewerExtension.postMessage(label);//Thunkable文字顯示留言
 }
